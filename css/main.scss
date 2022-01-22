@@ -20,6 +20,7 @@ h2,
 h3,
 p { 
     margin: 0;
+    color: #fff;
 }
 
 section {
@@ -71,6 +72,8 @@ section {
 }
 
 .primary-title {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 4px;
     font-size: 4rem;
     font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
     line-height: 1;
@@ -79,9 +82,15 @@ section {
 
 .section-title {
     text-align: center;
+    font-family: 'Russo One', sans-serif;
     font-size: clamp(2.5rem, calc(5vw +1rem), 4.5rem);
     line-height: 1;
     margin-bottom: 5rem;
+}
+
+.primary-text {
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 .navbar {
@@ -116,7 +125,7 @@ section {
 }
 
 .navbar-links a:hover {
-    color: black;
+    color: rgb(248, 7, 7);
 }
 
 .toggle-button {
@@ -225,40 +234,32 @@ section {
 }
 
 .featured {
-    background: #eee;
-    
-    &__item {
-        display: block;
-        position: relative;
-        transform: scale(.85);
-        transition: transform 250ms ease-in-out;
-        text-decoration: none;
-        color: #333;
-        text-align: center;
+    background-color: rgb(85, 83, 83);
+}
 
-        &:hover,
-        &:focus {
-            transform: scale(1);
-        }
+#bicycles {
+    display: flex;
+    flex-direction: column;
+}
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            padding: 100% 80% 0 0;
-            border-radius: 10%;
-            background: rgb(252, 122, 1);
-            opacity: 0.1;
-            z-index: -1;
-        }
+.flex-img {
+    position: relative;
+}
+
+
+
+@media only screen and (min-device-width : 768px) {
+    #bicycles {
+        flex-direction:row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-img {
+        max-width: 33.3%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
-.featured-details {
-    font-weight: 700;
-    position: absolute;
-    padding-top: 5em;
-    bottom: 0;
-    left: 40%;
-}
+

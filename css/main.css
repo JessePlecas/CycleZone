@@ -21,6 +21,7 @@ h2,
 h3,
 p {
   margin: 0;
+  color: #fff;
 }
 
 section {
@@ -80,6 +81,8 @@ section {
 }
 
 .primary-title {
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 4px;
   font-size: 4rem;
   font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
   line-height: 1;
@@ -88,9 +91,15 @@ section {
 
 .section-title {
   text-align: center;
+  font-family: 'Russo One', sans-serif;
   font-size: clamp(2.5rem, calc(5vw +1rem), 4.5rem);
   line-height: 1;
   margin-bottom: 5rem;
+}
+
+.primary-text {
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .navbar {
@@ -136,7 +145,7 @@ section {
 }
 
 .navbar-links a:hover {
-  color: black;
+  color: #f80707;
 }
 
 .toggle-button {
@@ -266,45 +275,40 @@ section {
 }
 
 .featured {
-  background: #eee;
+  background-color: #555353;
 }
 
-.featured__item {
-  display: block;
+#bicycles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-img {
   position: relative;
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  text-decoration: none;
-  color: #333;
-  text-align: center;
 }
 
-.featured__item:hover, .featured__item:focus {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.featured__item::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  padding: 100% 80% 0 0;
-  border-radius: 10%;
-  background: #fc7a01;
-  opacity: 0.1;
-  z-index: -1;
-}
-
-.featured-details {
-  font-weight: 700;
-  position: absolute;
-  padding-top: 5em;
-  bottom: 0;
-  left: 40%;
+@media only screen and (min-device-width: 768px) {
+  #bicycles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-img {
+    max-width: 33.3%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*# sourceMappingURL=main.css.map */
