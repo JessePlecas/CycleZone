@@ -34,25 +34,6 @@ section {
   margin: 0 auto;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.row > * {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  min-width: 20em;
-  min-height: 20em;
-}
-
 .spacing > * + * {
   margin-top: var(--spacer, 2rem);
 }
@@ -99,7 +80,13 @@ section {
 
 .primary-text {
   text-align: center;
+  padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.fa-bicycle {
+  color: #fff;
+  padding: 1em;
 }
 
 .navbar {
@@ -276,39 +263,57 @@ section {
 
 .featured {
   background-color: #555353;
+  position: relative;
 }
 
 #bicycles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
 }
 
 .flex-img {
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bikes {
+  position: relative;
+}
+
+.e-bikes {
+  position: relative;
+}
+
+.kids-bikes {
+  position: relative;
+}
+
+.bikes-caption, .e-bike-caption, .kids-bike-caption {
+  position: absolute;
+  top: 0;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  background: transparent;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  border: none;
+  z-index: 5;
 }
 
 @media only screen and (min-device-width: 768px) {
   #bicycles {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .flex-img {
-    max-width: 33.3%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
