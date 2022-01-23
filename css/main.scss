@@ -279,4 +279,18 @@ section {
     }
 }
 
+.logo-brands {
+    object-fit: contain;
+    max-width: 100%;
+    
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
 
