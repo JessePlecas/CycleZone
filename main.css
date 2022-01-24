@@ -276,7 +276,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background-image: url(images/e-bike-landing.jpg);
+    background-image: url(/images/e-bike-landing.jpg);
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -300,7 +300,7 @@ section {
   position: relative;
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
 }
 
@@ -340,7 +340,7 @@ section {
 
 @media only screen and (min-device-width: 768px) {
   #bicycles {
-    
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
@@ -351,6 +351,7 @@ section {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
+  padding-bottom: 1em;
 }
 
 .brands {
@@ -476,5 +477,78 @@ section {
     grid-column: 1 / 1;
     max-width: 100%;
   }
+}
+
+#bike-size {
+  background-color: grey;
+}
+
+.bike-sizing {
+  color: #000;
+}
+
+.bike-size-hero {
+  background-color: #2e2e2e;
+  text-align: center;
+  padding: 20em 0;
+  height: 100vh;
+  color: #fff;
+}
+
+@supports (background-blend-mode: multiply) {
+  .bike-size-hero {
+    background-image: url(/images/feature-bg.jpg);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.size-title {
+  padding: 2em;
+  text-align: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  color: #1b1e24;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.bike-chart {
+  background-color: #3e94ec;
+}
+
+.mountain-bike-chart {
+  background-color: #ff7300;
+}
+
+.hybrid-bike-chart {
+  background-color: rgba(168, 189, 4, 0.8);
+}
+
+.road-bike-chart {
+  background-color: #3d3527;
+  color: gainsboro;
+  margin-bottom: 2em;
+}
+
+caption, th {
+  background-color: #1b1e24;
+  color: gainsboro;
+  width: 100%;
+}
+
+tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+tr {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,7 +15,6 @@ menu.onclick = function(e) {
 const navbar = document.querySelector(".navbar");
 const hero = document.querySelector(".hero");
 
-
 const observerOneOptions = {
     rootMargin: "-200px 0px 0px 0px"
 };
