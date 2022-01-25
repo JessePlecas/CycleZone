@@ -8,6 +8,13 @@ body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
+    background-color: #eee;  
+}
+
+main {
+    position: relative;
+    margin-bottom: 200px;
+    z-index: 1;
 }
 
 img {
@@ -342,6 +349,7 @@ section {
 
 .service-description {
     color: #000;
+    text-align: left;
 }
 
 @media only screen and (min-device-width : 768px) {
@@ -387,6 +395,15 @@ section {
     .service-image {
         grid-column: 2 / 2;
     }
+
+}
+
+.stock-details {
+    color: #000;
+    text-align: left;
+    padding-top: 2em;
+    padding-inline: 2em;
+    padding-bottom: 0;
 }
 
 #stock {
@@ -394,6 +411,15 @@ section {
     display: grid;
     grid-template-rows: auto;
     text-align: center;
+}
+
+.stock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+}
+.stock li {
+    list-style: none;
 }
 
 @media only screen and (min-device-width : 768px) {
@@ -415,9 +441,12 @@ section {
 
 #bike-size {
     background-color: grey;
+    z-index: 1;
 }
 
+
 .bike-sizing {
+    background: grey;
     color: #000;
 }
 
@@ -449,7 +478,6 @@ table {
     color: rgb(27,30,36);
     font-size: .7em;
     margin: 0 auto;
-    margin-bottom: 1em;
   }
 
   @media only screen and (min-device-width : 768px) {
@@ -488,4 +516,79 @@ table {
 
   tr {
       text-align: center;
+  }
+
+  footer {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background:rgb(46, 46, 46);
+        color: #fff;
+        padding: 1em 2em;
+  }
+
+  .footer-title {
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(rgba(238, 238, 238, 0.527), #d71a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media only screen and (min-device-width : 768px) {
+    .footer-details {
+        flex-direction: row !important;
+        justify-content: space-around !important;
+    }
+
+    .footer-title {
+        font-size: 3em;
+    }
+
+    .line {
+        border-left: thin solid #fff;
+        height: 150px;
+    }
+
+    .contact {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        font-size: 2em;
+    }
+
+  }
+
+  .footer-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .contact {
+      text-decoration: none;
+      color: #fff;
+      align-self: center;
+  }
+
+  .icon {
+      background: -webkit-linear-gradient(rgba(238, 238, 238, 0.527), #d71a1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      align-self: center;
+  }
+
+  .fa-twitter {
+    padding-left: 1em;
+  }
+
+  .address {
+    align-self: center;
+    text-align: center;
   }
