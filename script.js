@@ -5,12 +5,17 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 });
 
+navbarLinks.addEventListener('click', () => {
+    navbarLinks.classList.remove('active')
+});
+
 const menu = document.getElementById("menu");
 
 menu.onclick = function(e) {
     e.preventDefault();
     menu.classList.toggle("open-menu");
 }
+
 
 const navbar = document.querySelector(".navbar");
 const hero = document.querySelector(".hero");

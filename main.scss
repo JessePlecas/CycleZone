@@ -231,7 +231,7 @@ section {
     }
 }
 
-.hero {
+.landing {
     background-color: rgb(46, 46, 46);
     @supports (background-blend-mode: multiply) {
         background-image: url(/images/e-bike-landing.jpg);
@@ -447,8 +447,15 @@ table {
     width: 80%;
     border-collapse: collapse;
     color: rgb(27,30,36);
+    font-size: .7em;
     margin: 0 auto;
     margin-bottom: 1em;
+  }
+
+  @media only screen and (min-device-width : 768px) {
+      table {
+        font-size: 1em;
+      }
   }
 
   .bike-chart {
