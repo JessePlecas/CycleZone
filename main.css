@@ -292,7 +292,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .landing {
-    background-image: url(images/e-bike-landing.jpg);
+    background-image: url("images/e-bike-landing.jpg");
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -537,7 +537,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .bike-size-hero {
-    background-image: url(images/feature-bg.jpg);
+    background-image: url("images/feature-bg.jpg");
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -704,7 +704,7 @@ footer {
 
 @supports (background-blend-mode: multiply) {
   .main-image {
-    background-image: url(images/bikes-product.jpg);
+    background-image: url("images/bikes-product.jpg");
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -723,7 +723,7 @@ footer {
 
 @supports (background-blend-mode: multiply) {
   .main-image-ebike {
-    background-image: url(images/ebike-landing.jpg);
+    background-image: url("images/ebike-landing.jpg");
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
