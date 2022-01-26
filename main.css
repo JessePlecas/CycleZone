@@ -14,13 +14,15 @@ body {
 
 main {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 220px;
   z-index: 1;
 }
 
 img {
   max-width: 100%;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 h1,
@@ -605,7 +607,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 220px;
   background: #2e2e2e;
   color: #fff;
   padding: 1em 2em;
@@ -704,11 +706,10 @@ footer {
 
 @supports (background-blend-mode: multiply) {
   .main-image {
-    background-image: url("images/bikes-product.jpg");
+    background-image: url("images/mobile-bikes-landing.jpg");
     background-blend-mode: overlay;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top !important;
     background-size: cover;
   }
 }
@@ -723,9 +724,8 @@ footer {
 
 @supports (background-blend-mode: multiply) {
   .main-image-ebike {
-    background-image: url("images/ebike-landing.jpg");
+    background-image: url("images/mobile-ebike.jpg");
     background-blend-mode: overlay;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -744,10 +744,24 @@ footer {
   .main-image-kids {
     background-image: url("images/kids-landing2.jpg");
     background-blend-mode: overlay;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .main-image {
+    background-image: url("images/bikes-product.jpg");
+    background-position: center center !important;
+    background-attachment: fixed;
+  }
+  .main-image-ebike {
+    background-image: url("images/ebike-landing.jpg");
+    background-attachment: fixed;
+  }
+  .main-image-kids {
+    background-attachment: fixed;
   }
 }
 
@@ -755,6 +769,19 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .bikes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .prod-detail {
