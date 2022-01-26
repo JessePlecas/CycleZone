@@ -250,7 +250,7 @@ section {
 .landing {
     background-color: rgb(48, 47, 47);
     @supports (background-blend-mode: multiply) {
-        background-image: url(images/e-bike-landing.jpg);
+        background-image: url(.images/e-bike-landing.jpg);
         background-blend-mode: overlay;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -464,7 +464,7 @@ section {
 .bike-size-hero {
     background-color: rgb(46, 46, 46);
     @supports (background-blend-mode: multiply) {
-        background-image: url(images/feature-bg.jpg);
+        background-image: url(.images/feature-bg.jpg);
         background-blend-mode: overlay;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -616,7 +616,7 @@ table {
   .main-image {
     background-color: rgb(46, 46, 46);
     @supports (background-blend-mode: multiply) {
-        background-image: url(images/bikes-product.jpg);
+        background-image: url(.images/bikes-product.jpg);
         background-blend-mode: overlay;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -632,7 +632,7 @@ table {
 .main-image-ebike {
     background-color: rgb(46, 46, 46);
     @supports (background-blend-mode: multiply) {
-        background-image: url(images/ebike-landing.jpg);
+        background-image: url(.images/ebike-landing.jpg);
         background-blend-mode: overlay;
         background-attachment: fixed;
         background-repeat: no-repeat;
