@@ -31,6 +31,15 @@ p {
   color: #fff;
 }
 
+h1 {
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+}
+
 .btn {
   opacity: 1;
   outline: 0;
@@ -274,7 +283,7 @@ section {
 }
 
 .landing {
-  background-color: #2e2e2e;
+  background-color: #302f2f;
   text-align: center;
   padding: 20em 0;
   height: 100vh;
@@ -283,7 +292,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .landing {
-    background-image: url(/images/e-bike-landing.jpg);
+    background-image: url(images/e-bike-landing.jpg);
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -507,6 +516,7 @@ section {
   }
 }
 
+/* === Bike sizing === */
 #bike-size {
   background-color: grey;
   z-index: 1;
@@ -527,7 +537,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .bike-size-hero {
-    background-image: url(/images/feature-bg.jpg);
+    background-image: url(images/feature-bg.jpg);
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -588,6 +598,7 @@ tr {
   text-align: center;
 }
 
+/* === Footer === */
 footer {
   position: -webkit-sticky;
   position: sticky;
@@ -675,5 +686,59 @@ footer {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+}
+
+/* ==== Bike page ==== */
+.main {
+  background: #eee;
+  color: #000;
+}
+
+.main-image {
+  background-color: #2e2e2e;
+  text-align: center;
+  padding: 20em 0;
+  height: 100vh;
+  color: #fff;
+}
+
+@supports (background-blend-mode: multiply) {
+  .main-image {
+    background-image: url(images/bikes-product.jpg);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.main-image-ebike {
+  background-color: #2e2e2e;
+  text-align: center;
+  padding: 20em 0;
+  height: 100vh;
+  color: #fff;
+}
+
+@supports (background-blend-mode: multiply) {
+  .main-image-ebike {
+    background-image: url(images/ebike-landing.jpg);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.bikes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prod-detail {
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
