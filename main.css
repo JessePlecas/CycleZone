@@ -135,6 +135,7 @@ section {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
+  color: #fff;
 }
 
 .navbar {
@@ -773,6 +774,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -784,7 +788,7 @@ footer {
   }
 }
 
-.prod-detail {
+.prod-detail, h2, p {
   color: #000;
 }
 /*# sourceMappingURL=main.css.map */
