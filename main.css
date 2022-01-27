@@ -624,6 +624,7 @@ footer {
   letter-spacing: 2px;
   background: -webkit-linear-gradient(rgba(238, 238, 238, 0.527), #d71a1a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -678,6 +679,7 @@ footer {
 .icon {
   background: -webkit-linear-gradient(rgba(238, 238, 238, 0.527), #d71a1a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
