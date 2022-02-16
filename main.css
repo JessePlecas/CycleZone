@@ -548,21 +548,6 @@ section {
   padding-bottom: 0;
 }
 
-.gmap_canvas {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.gmap_canvas iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
 @media only screen and (min-device-width: 768px) {
   #contact {
     -ms-grid-columns: 1fr 1fr;
@@ -571,9 +556,10 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .mapouter {
+  .shop-image {
     -ms-grid-column: 2;
     grid-column: 2 /2;
+    max-width: 100%;
   }
   .contact-details {
     -ms-grid-column: 1;
